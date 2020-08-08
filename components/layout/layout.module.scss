@@ -1,0 +1,29 @@
+@import "../../styles/variables";
+
+.container {
+	max-width: 1380px;
+	margin: 0 auto;
+	width: 100%;
+}
+
+.header {
+	background: $primaryColor;
+	color: #fff;
+
+	.container {
+		align-items: center;
+		display: flex;
+		flex-flow: row nowrap;
+		height: 60px;
+		justify-content: space-between;
+	}
+
+	.search {
+		label {
+			padding-right: 9px;
+		}
+		input {
+			border: none;
+		}
+	}
+}
