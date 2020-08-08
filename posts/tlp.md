@@ -1,5 +1,6 @@
 ---
 title: "TLP: Linux Laptop Battery Manager"
+keywords: "tlp, linux, battery, ubuntu, config"
 date: "2020-08-08"
 ---
 

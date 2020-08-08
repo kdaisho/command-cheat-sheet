@@ -2,7 +2,7 @@ import Link from "next/link";
 import Head from "next/head";
 import styles from "./layout.module.scss";
 
-const Layout = ({ children, isHome }) => {
+const Layout = ({ children, isHome, handleSearch }) => {
 	const siteTitle = "Command Cheat Sheet";
 
 	return (
@@ -18,18 +18,26 @@ const Layout = ({ children, isHome }) => {
 				/>
 				<meta name="og:title" content={siteTitle} />
 				<meta name="twitter:card" content="summary_large_image" />
+				<title>{siteTitle}</title>
+				<link
+					href="https://fonts.googleapis.com/css2?family=Archivo+Narrow:wght@400;700&display=swap"
+					rel="stylesheet"
+				></link>
 			</Head>
 			<header className={styles.header}>
 				<div className={styles.container}>
-					<h1>My Command Sheet</h1>
-					<div className={styles.search}>
+					<div className={styles.left}>
+						<img src="/images/profile.jpg" className={styles.profile} alt="author" />
+						<h1>Command Cheat Sheet</h1>
+					</div>
+					<div className={styles.right}>
 						<label htmlFor="search">Search</label>
-						<input id="search" type="text" />
+						<input id="search" type="text" onChange={handleSearch} />
 					</div>
 				</div>
 			</header>
 			<div className={styles.container}>
-				<main>{children}</main>
+				<main className={styles.eachWrap}>{children}</main>
 				<div className="my-8">
 					{isHome ? (
 						<div>&copy; Copyright {new Date().getFullYear()} daishodesign.com</div>

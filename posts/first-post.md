@@ -1,5 +1,6 @@
 ---
 title: "My First Post"
+keywords: "javascript, git"
 date: "2020-08-07"
 ---
 

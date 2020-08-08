@@ -1,29 +1,78 @@
 @import "../../styles/variables";
 
 .container {
-	max-width: 1380px;
 	margin: 0 auto;
+	padding: 0 1rem;
 	width: 100%;
+
+	@media (min-width: 768px) {
+		max-width: 1280px;
+	}
 }
 
 .header {
 	background: $primaryColor;
-	color: #fff;
 
 	.container {
 		align-items: center;
 		display: flex;
-		flex-flow: row nowrap;
-		height: 60px;
+		flex-flow: row wrap;
 		justify-content: space-between;
+		padding: 1rem;
+
+		@media (min-width: 768px) {
+			height: 75px;
+		}
 	}
 
-	.search {
+	h1 {
+		color: #fff;
+		font-size: 1.5rem;
+		font-weight: bold;
+		padding-left: 1rem;
+	}
+
+	.left {
+		align-items: center;
+		display: flex;
+		flex: 0 0 100%;
+		flex-flow: row wrap;
+		margin-bottom: 1rem;
+
+		@media (min-width: 768px) {
+			flex: 0 0 50%;
+			margin: 0;
+		}
+
+		img {
+			border-radius: 50%;
+			width: 50px;
+		}
+	}
+
+	.right {
+		flex: 0 0 100%;
+		text-align: right;
+
+		@media (min-width: 768px) {
+			flex: 0 0 50%;
+		}
+
 		label {
+			color: #fff;
+			font-size: 1.25rem;
 			padding-right: 9px;
 		}
 		input {
-			border: none;
+			font-size: 1.25rem;
+			padding: 0.1rem 0.5rem;
+			width: calc(100% - 100px);
 		}
 	}
+}
+
+.eachWrap {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: flex-start;
 }
