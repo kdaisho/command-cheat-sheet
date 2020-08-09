@@ -30,10 +30,12 @@ const Layout = ({ children, isHome, handleSearch }) => {
 						<img src="/images/profile.jpg" className={styles.profile} alt="author" />
 						<h1>Command Cheat Sheet</h1>
 					</div>
-					<div className={styles.right}>
-						<label htmlFor="search">Search</label>
-						<input id="search" type="text" onChange={handleSearch} />
-					</div>
+					{isHome && (
+						<div className={styles.right}>
+							<label htmlFor="search">Search</label>
+							<input id="search" type="text" onChange={handleSearch} />
+						</div>
+					)}
 				</div>
 			</header>
 			<div className={`${styles.container} ${!isHome && styles.isArticle}`}>

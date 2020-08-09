@@ -6,11 +6,20 @@
 	color: #666;
 }
 
-.content {
-	padding: 2rem 0;
+.article {
+	overflow-x: auto;
+	width: 100%;
 
-	h2 {
-		font-size: 1.25rem;
-		margin-top: 2rem;
+	.content {
+		padding: 2rem 0;
+
+		h2 {
+			font-size: 1.25rem;
+			margin-top: 2rem;
+		}
+
+		pre {
+			overflow-x: auto;
+		}
 	}
 }
