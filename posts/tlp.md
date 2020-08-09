@@ -1,10 +1,10 @@
 ---
 title: "TLP: Linux Laptop Battery Manager"
-keywords: "tlp, linux, battery, ubuntu, config"
+keywords: "tlp, linux, battery, ubuntu, config, setcharge, BAT0, fullcharge"
 date: "2020-08-08"
 ---
 
-# TLP
+Always have a hard time to remember these lines.
 
 ## Setting TLP threshold
 

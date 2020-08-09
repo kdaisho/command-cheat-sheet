@@ -7,6 +7,9 @@
 
 	@media (min-width: 768px) {
 		max-width: 1280px;
+		&.isArticle {
+			max-width: 780px;
+		}
 	}
 }
 
@@ -19,10 +22,6 @@
 		flex-flow: row wrap;
 		justify-content: space-between;
 		padding: 1rem;
-
-		@media (min-width: 768px) {
-			height: 75px;
-		}
 	}
 
 	h1 {
@@ -75,4 +74,5 @@
 	display: flex;
 	flex-flow: row wrap;
 	justify-content: flex-start;
+	margin: 2rem 0;
 }

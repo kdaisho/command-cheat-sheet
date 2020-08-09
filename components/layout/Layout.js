@@ -20,7 +20,7 @@ const Layout = ({ children, isHome, handleSearch }) => {
 				<meta name="twitter:card" content="summary_large_image" />
 				<title>{siteTitle}</title>
 				<link
-					href="https://fonts.googleapis.com/css2?family=Archivo+Narrow:wght@400;700&display=swap"
+					href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap"
 					rel="stylesheet"
 				></link>
 			</Head>
@@ -36,14 +36,14 @@ const Layout = ({ children, isHome, handleSearch }) => {
 					</div>
 				</div>
 			</header>
-			<div className={styles.container}>
+			<div className={`${styles.container} ${!isHome && styles.isArticle}`}>
 				<main className={styles.eachWrap}>{children}</main>
 				<div className="my-8">
 					{isHome ? (
-						<div>&copy; Copyright {new Date().getFullYear()} daishodesign.com</div>
+						<div>&copy; Copyright {new Date().getFullYear()} daishodesign.com 😎</div>
 					) : (
 						<Link href="/">
-							<a>🏠 Back to home</a>
+							<a>🚀 Back to home</a>
 						</Link>
 					)}
 				</div>
