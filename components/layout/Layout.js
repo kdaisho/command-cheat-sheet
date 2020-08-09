@@ -26,8 +26,16 @@ const Layout = ({ children, isHome, handleSearch }) => {
 			</Head>
 			<header className={styles.header}>
 				<div className={styles.container}>
-					<div className={styles.left}>
-						<img src="/images/profile.jpg" className={styles.profile} alt="author" />
+					<div className={`${styles.left} ${isHome && styles.isHome}`}>
+						<Link href="/">
+							<a>
+								<img
+									src="/images/profile.jpg"
+									className={styles.profile}
+									alt="author"
+								/>
+							</a>
+						</Link>
 						<h1>Command Cheat Sheet</h1>
 					</div>
 					{isHome && (
