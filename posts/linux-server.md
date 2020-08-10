@@ -22,7 +22,7 @@ kill -9 $(sudo lsof -t -i:8080)
 grep -ir "console" .
 ```
 
-_-i = case insensitive, -r = search recursively_
+_-i = case insensitive,<br>-r = search recursively_
 
 ## Find running node process
 

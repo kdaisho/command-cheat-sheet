@@ -1,3 +1,5 @@
+@import "./variables";
+
 .title {
 	font-size: 2rem;
 }
@@ -20,6 +22,18 @@
 
 		pre {
 			overflow-x: auto;
+		}
+	}
+
+	blockquote {
+		background: #888;
+		border-left: 6px solid $lightBlue;
+		margin: 0.5rem 0;
+		padding: 0.5rem 1rem;
+
+		p {
+			color: #fff;
+			font-style: italic;
 		}
 	}
 }
