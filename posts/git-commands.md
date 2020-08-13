@@ -21,3 +21,15 @@ git remote add origin <destination>
 ```
 git remote rm <destination>
 ```
+
+## Creating a local branch that tracks a remote branch
+
+```
+git checkout --track origin/branch_name
+```
+
+## Deleting a local branch
+
+```
+git branch -d local_branch_name
+```
