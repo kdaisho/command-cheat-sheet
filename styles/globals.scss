@@ -20,6 +20,15 @@ pre {
 	}
 }
 
+h1 > code,
+h2 > code,
+p > code {
+	background: #e6e6e6;
+	border-radius: 3px;
+	font-family: "Courier New", sans-serif;
+	padding: 0 8px;
+}
+
 em {
 	color: #666;
 	font-style: italic;

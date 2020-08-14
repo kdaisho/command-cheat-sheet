@@ -33,3 +33,23 @@ git checkout --track origin/branch_name
 ```
 git branch -d local_branch_name
 ```
+
+## Stashing changes
+
+```
+git stash
+```
+
+## Retrieve stashed changes
+
+Applies the changes and leaves a copy in stash
+
+```
+git stash apply stash_name
+```
+
+Applies the changes and removes the files from the stash
+
+```
+git stash pop stash_name
+```
