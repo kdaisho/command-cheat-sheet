@@ -4,13 +4,13 @@ keywords: "terminator, command line, bash"
 date: "2020-08-14"
 ---
 
-## Open a new tag
+## Open a new tab
 
 ```
 shift + ctrl + t
 ```
 
-## Switch tag
+## Switch tab
 
 ```
 ctrl + pageUp (or down}
