@@ -22,8 +22,8 @@ function Index({ allPostsData }) {
 					})
 					.map(({ id, title, date }) => {
 						return (
-							<Link href="/posts/[id]" as={`/posts/${id}`}>
-								<a key={id} className={styles.each}>
+							<Link key={id} href="/posts/[id]" as={`/posts/${id}`}>
+								<a className={styles.each}>
 									<h2>{title}</h2>
 									<p>{date}</p>
 								</a>
