@@ -15,3 +15,9 @@ shift + ctrl + t
 ```
 ctrl + pageUp (or down}
 ```
+
+## Scroll
+
+```
+shift + pageUp (or down}
+```
