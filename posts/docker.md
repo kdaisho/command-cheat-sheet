@@ -1,7 +1,7 @@
 ---
 title: "Docker commands"
 keywords: "docker, container, containers, command, commands, images"
-date: "2021-06-06"
+date: "2021-06-16"
 ---
 
 ## Create a container
@@ -13,14 +13,23 @@ sudo docker run -it --name docker-host --rm --privileged ubuntu:bionic
 ```
 
 _--name = name the container (in this example: docker-host) so that I can recognize my container in the list (sudo docker ps)_
+
 _--rm = removes if there's a running process with the same name then runs a new one_
+
 _docker run = we're going to run some commands in the container_
+
 _-it = make the shell interactive (so we can use it like a normal terminal.)_
 
-## Get containers list
+## Get running containers
 
 ```
-sudo docker images ps -a
+sudo docker ps
+```
+
+## Get all containers (including stopped containers)
+
+```
+sudo docker ps -a
 ```
 
 ## Get into a running container
@@ -32,7 +41,8 @@ sudo docker exec -it <mycontainer> bash
 ```
 
 _-i = Interactive mode (such as when starting a bash shell)_
-_-t = Pseudoterminal (aka pseudotty)_
+
+_-t = Pseudo-terminal (aka pseudo-tty)_
 
 ## Attach (me) to a running process
 
@@ -52,8 +62,22 @@ sudo docker kill <container_name>
 sudo docker container rm <container_id>
 ```
 
+## Remove all stopped container
+
+```
+sudo docker container prune
+```
+
 ## Remove a docker image
 
 ```
-sudo docker image rm <image_id>
+sudo docker rmi <image_id>
+```
+
+_rmi = remove image_
+
+## Print image history
+
+```
+sudo docker history <image_id>
 ```
