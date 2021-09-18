@@ -1,6 +1,6 @@
 ---
 title: "Linux Server Commands"
-keywords: "linux, localhost, port, node, kill, process, running"
+keywords: "linux, localhost, port, node, kill, process, running port, lsof"
 date: "2020-08-09"
 ---
 
