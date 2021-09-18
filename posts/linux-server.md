@@ -10,6 +10,12 @@ date: "2020-08-09"
 sudo lsof -i -P -n | grep LISTEN
 ```
 
+_-i = Lists IP sockets_
+
+_-P = Do not resolve port names (list port number instead of its name)_
+
+_-n = Do not resolve hostname (no DNS)_
+
 ## Kill a process running on particular port (e.g. 8080)
 
 ```
@@ -22,4 +28,8 @@ kill -9 $(sudo lsof -t -i:8080)
 ps aux | grep node
 ```
 
-_a = show processes for all users<br>u = display the process's user/owner<br>x = also show processes not attached to a terminal_
+_a = show processes for all users_
+
+_u = display the process's user/owner_
+
+_x = also show processes not attached to a terminal_
