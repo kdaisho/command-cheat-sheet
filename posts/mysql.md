@@ -17,13 +17,14 @@ SHOW DATABASES;
 ```
 
 Command above prints this
-| Database |
+
+| Database           |
 | ------------------ |
 | Information_schema |
-| blog |
-| mysql |
+| blog               |
+| mysql              |
 | Information_schema |
-| sys |
+| sys                |
 
 ```sql
 USE <database>;
