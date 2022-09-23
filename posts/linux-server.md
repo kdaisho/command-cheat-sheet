@@ -4,10 +4,16 @@ keywords: "linux, localhost, port, node, kill, process, running port, lsof"
 date: "2020-08-09"
 ---
 
+## Check a specific port (e.g. 3000)
+
+```
+lsof -i tcp:3000
+```
+
 ## List active localhost ports
 
 ```
-sudo lsof -i -P -n | grep LISTEN
+lsof -i -P -n | grep LISTEN
 ```
 
 _-i = Lists IP sockets_
